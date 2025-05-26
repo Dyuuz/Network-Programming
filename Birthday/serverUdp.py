@@ -7,6 +7,7 @@ def weekday(y, m, d):
     wkd = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     x = calendar.weekday(y, m, d)
     r = wkd[x]
+    print(x)
     re += f'Year {y}, Month {m}, Day {d} is {r}'
     return re
 
