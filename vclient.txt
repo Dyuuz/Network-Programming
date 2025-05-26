@@ -1,0 +1,10 @@
+import socket
+
+cs = socket.socket(family = socket.AF_INET, type = socket.SOCK_STREAM )
+print('client start: ')
+
+host = socket.gethostname()
+port = 8500
+cs.connect((host, port))
+msg = input('message to server: ')
+cs.send(bytes(msg.encode('ascii')))
